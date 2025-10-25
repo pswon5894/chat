@@ -22,6 +22,11 @@ class LoginProvider with ChangeNotifier{
     _user = null;
     notifyListeners();
   }
+
+  void currentUser(){
+    _user = FirebaseAuth.instance.currentUser;
+    notifyListeners();
+  }
 }
 
 

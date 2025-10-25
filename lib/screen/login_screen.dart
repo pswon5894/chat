@@ -19,9 +19,9 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       await Provider.of<LoginProvider>(context, listen: false)
           .signInWithEmailAndPassword(_emailController.text, _passwordController.text);
-      Navigator.pushNamed(context, '/success');
+      Navigator.pushNamed(context, '/chat');
       // if (credential.user!.emailVerified){
-      //   Navigator.pushNamed(context, '/success');
+      //   Navigator.pushNamed(context, '/chat');
       // } else {
       //   credential.user!.sendEmailVerification();
       //   ScaffoldMessenger.of(context)

@@ -2,8 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'screen/login_screen.dart';
 import 'screen/signup_screen.dart';
-import 'screen/success_screen.dart';
+import 'screen/chat_screen.dart';
 import 'screen/splash_screen.dart';
+import 'screen/chat_screen.dart';
 import 'package:provider/provider.dart';
 import 'providers/login_provider.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         '/splash' : (context) => SplashScreen(),
         '/login' : (context) => LoginScreen(),
         '/signup': (context) => SignUpScreen(),
-        '/success': (context) => SuccessScreen(),
+        '/chat': (context) => ChatScreen(),
       },
     );
   }
