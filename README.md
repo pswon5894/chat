@@ -1,6 +1,6 @@
 # chat
 
-A new Flutter project.
+회원가입과 로그인으로 채팅을 하는 플러터 앱
 
 ## Getting Started
 
