@@ -19,9 +19,15 @@ class _ChatScreenState extends State<ChatScreen> {
           IconButton(onPressed: () async {
             await context.read<LoginProvider>().signOut;
             Navigator.pushNamed(context, '/login');
-          }, icon: Icon(Icons.logout))
+          },
+              icon: Icon(Icons.logout))
         ],
-      )
+      ),
+      body: Column(
+        children: [
+
+        ]
+      ),
     );
   }
 }

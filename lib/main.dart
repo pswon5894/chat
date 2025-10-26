@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'screen/login_screen.dart';
 import 'screen/signup_screen.dart';
-import 'screen/chat_screen.dart';
 import 'screen/splash_screen.dart';
 import 'screen/chat_screen.dart';
 import 'package:provider/provider.dart';
