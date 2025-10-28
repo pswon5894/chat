@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/login_provider.dart';
@@ -26,6 +27,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
   @override
   Widget build(BuildContext context) {
+    User? user = context.read<LoginProvider>().user;
     return Scaffold(
         appBar: AppBar(
           title: Text('chat'),
@@ -49,9 +51,26 @@ class _ChatScreenState extends State<ChatScreen> {
               }
               final chatDocs = snapshot.data.docs;
               return ListView.builder(
+                reverse: true,
                   itemCount: chatDocs.length,
                   itemBuilder: (context, index){
-                return Text(chatDocs[index]['text']);
+                    bool isMe = chatDocs[index]['sender'] == user?.email;
+                    return Row(
+                      mainAxisAlignment: isMe ? MainAxisAlignment.end : MainAxisAlignment.start,
+                      children: [Container(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 15),
+                        margin: EdgeInsets.symmetric(
+                            vertical: 10, horizontal: 15),
+                        decoration: BoxDecoration(
+                          color: isMe ? Colors.grey[300] : Colors.grey[500],
+                          borderRadius:  BorderRadius.all(Radius.circular(15))),
+                        child: Text(
+                            chatDocs[index]['text'],
+                            style: TextStyle(fontSize: 20),
+                        ),
+                      )],
+                    );
               });
             },
           )),
