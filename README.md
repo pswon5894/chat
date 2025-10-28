@@ -6,7 +6,7 @@
 
 flutter, dart, firebase 서버이용
 
-![](https://github.com/pswon5894/chat/blob/master/1%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.jpg) 로그인 화면 | ![]([https://github.com/pswon5894/chat/blob/master/2%20%EC%B1%84%ED%8C%85%EC%B0%BD.jpg](https://github.com/pswon5894/chat/blob/master/2%20%EC%B1%97%20%EC%8A%A4%ED%81%AC%EB%A6%B0.png)) 채팅 화면
+![](https://github.com/pswon5894/chat/blob/master/1%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.png) 로그인 화면 | ![]([https://github.com/pswon5894/chat/blob/master/2%20%EC%B1%97%20%EC%8A%A4%ED%81%AC%EB%A6%B0.png) 채팅 화면
 ---|---|
 
 ## 보안점
