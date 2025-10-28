@@ -29,6 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     User? user = context.read<LoginProvider>().user;
     return Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('chat'),
           actions: [IconButton(onPressed: () async {
@@ -63,7 +64,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         margin: EdgeInsets.symmetric(
                             vertical: 10, horizontal: 15),
                         decoration: BoxDecoration(
-                          color: isMe ? Colors.grey[300] : Colors.grey[500],
+                          color: isMe ? Colors.yellow[400] : Colors.grey[300],
                           borderRadius:  BorderRadius.all(Radius.circular(15))),
                         child: Text(
                             chatDocs[index]['text'],
