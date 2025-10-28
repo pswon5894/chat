@@ -33,7 +33,7 @@ class _ChatScreenState extends State<ChatScreen> {
           title: Text('chat'),
           actions: [IconButton(onPressed: () async {
             await context.read<LoginProvider>().signOut();
-            Navigator.pushNamed(context, 'login');
+            Navigator.pushNamed(context, '/login');
           }, icon: Icon(Icons.logout),)]
         ),
       body: Column(
