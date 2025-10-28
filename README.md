@@ -4,13 +4,7 @@
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+flutter, dart, firebase 서버이용
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](https://github.com/pswon5894/chat/blob/master/1%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%99%94%EB%A9%B4.jpg) 로그인 화면 | ![](https://github.com/pswon5894/chat/blob/master/2%20%EC%B1%84%ED%8C%85%EC%B0%BD.jpg) 채팅
+---|---|
